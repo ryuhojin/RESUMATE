@@ -1,0 +1,27 @@
+.Container {
+  margin: 24px 0;
+  width: 100%;
+  display: flex;
+}
+.Container > input {
+  flex-grow: 1;
+  padding: 12px;
+}
+
+.Container > button {
+  margin-left: 16px;
+  padding: 0 16px;
+}
+
+.WriteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:24px 0;
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgb(105, 105, 255);
+  padding:16px;
+}

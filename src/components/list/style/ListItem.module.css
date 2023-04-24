@@ -1,0 +1,28 @@
+.Container {
+  background: black;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 0px 10px rgb(105, 105, 255);
+  color: #fff;
+}
+
+.Container > div + div {
+  margin-top: 16px;
+}
+
+.Question {
+  font-size: 16px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.Answer {
+  color: #c1c1c1;
+  font-size: 14px;
+  line-height: 1.38;
+  height: 136px;
+}
+
+.Bold {
+  font-weight: 700;
+}
