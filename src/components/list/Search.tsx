@@ -5,9 +5,11 @@ const Search = () => {
     <>
       <div className={styles.Container}>
         <input type={"text"} placeholder="검색어를 입력하세요" />
-        <button>SEARCH</button>
+        <button>문항 검색</button>
       </div>
-      <Link className={styles.WriteBtn} href={""}>자기소개서 문항 작성</Link>
+      <Link className={styles.WriteBtn} href={""}>
+        자기소개서 문항 작성
+      </Link>
     </>
   );
 };

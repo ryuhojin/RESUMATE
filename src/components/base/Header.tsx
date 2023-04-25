@@ -16,9 +16,6 @@ const Header = () => {
         <div className={styles.Nav}>
           <ul>
             <li>
-              <Link href={""}>RESUME</Link>
-            </li>
-            <li>
               <Link href={""}>COMPANY</Link>
             </li>
             <li>
@@ -28,6 +25,7 @@ const Header = () => {
             <li>
               <Link href={""}>LOGIN</Link>
             </li>
+            <li>DarkMode</li>
           </ul>
         </div>
       </div>

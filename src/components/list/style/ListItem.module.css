@@ -1,9 +1,15 @@
 .Container {
-  background: black;
+  background: var(--bg-white-color);
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0px 0px 10px rgb(105, 105, 255);
-  color: #fff;
+  color: var(--font-color);
+  border: 1px solid var(--stroke-color);
+  box-shadow: 0px 1px 3px rgba(96, 108, 128, 0.05);
+  text-decoration: none;
+}
+.Container:hover {
+  scale: 1.05;
+  transition: all 0.3s;
 }
 
 .Container > div + div {
@@ -17,12 +23,33 @@
 }
 
 .Answer {
-  color: #c1c1c1;
+  color: var(--font-desc-color);
   font-size: 14px;
   line-height: 1.38;
   height: 136px;
 }
 
+.Footer {
+  margin-top: 8px !important;
+  font-size: 11px;
+  color: var(--font-desc2-color);
+}
+
+.Footer > p {
+  margin: 0;
+}
+.Footer > p + p {
+  margin-top: 16px;
+}
+.FooterItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FooterDate {
+  display: flex;
+  justify-content: center;
+}
 .Bold {
   font-weight: 700;
 }

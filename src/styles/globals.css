@@ -183,12 +183,14 @@ body,
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: var(--bg-color);
 }
 
 :root {
-  --darkblue-color: #13293d;
-  --deepblue-color: #006494;
-  --grenblue-color: #247ba0;
-  --realblue-color: #1b98e0;
-  --ivory-color: #e8f1f2;
+  --bg-color: #f7f8fa;
+  --bg-white-color: #fdfdfd;
+  --stroke-color: #e9ebf0;
+  --font-color: #000;
+  --font-desc-color: #444;
+  --font-desc2-color: #888;
 }
