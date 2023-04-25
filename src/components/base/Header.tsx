@@ -2,7 +2,12 @@ import styles from "./style/Header.module.css";
 import useScrollPosition from "@/libs/hooks/useScrollPosition";
 import Link from "next/link";
 
-const Header = () => {
+interface HeaderProps {
+  toggleTheme: () => void;
+}
+
+const Header = ({ toggleTheme }: HeaderProps) => {
+  
   const scrollPosition = useScrollPosition() != 0 ? "Scrolled" : "";
 
   return (
@@ -25,7 +30,12 @@ const Header = () => {
             <li>
               <Link href={""}>LOGIN</Link>
             </li>
-            <li>DarkMode</li>
+            <li>
+              <label className={styles.Switch} onChange={toggleTheme}>
+                <input type="checkbox" />
+                <span className={`${styles.Slider} ${styles.Round}`}></span>
+              </label>
+            </li>
           </ul>
         </div>
       </div>

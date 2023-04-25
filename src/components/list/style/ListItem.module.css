@@ -27,6 +27,7 @@
   font-size: 14px;
   line-height: 1.38;
   height: 136px;
+  overflow: hidden;
 }
 
 .Footer {

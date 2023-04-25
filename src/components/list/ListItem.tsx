@@ -16,7 +16,7 @@ const ListItem = () => {
       </div>
       <div className={styles.Footer}>
         <p className={styles.FooterItem}>
-          <span>글자수 : 800, 1200, 1600</span> <span>합격률 : 30%</span>
+          <span>글자수 : 800</span> <span>합격률 : 30%</span>
         </p>
         <p className={styles.FooterDate}>마지막 수정일 : 2022.03.24</p>
       </div>

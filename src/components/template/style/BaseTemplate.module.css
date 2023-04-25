@@ -1,8 +1,25 @@
 .Container {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 .Wrapper {
   width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
+.dark {
+  --bg-color: #000;
+  --bg-white-color: #fdfdfd;
+  --stroke-color: #e9ebf0;
+  --font-color: #000;
+  --font-desc-color: #444;
+  --font-desc2-color: #888;
+}
+
+.light {
+}
