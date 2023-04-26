@@ -8,10 +8,10 @@
 }
 .Scrolled {
   box-shadow: inset 0 -1px 0 0 var(--stroke-color);
-  background-color: var(--bg-white-color);
+  background-color: var(--bg-color);
 }
 .Wrapper {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -19,14 +19,24 @@
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 1200px) {
+  .Wrapper {
+    width: 100%;
+  }
+}
+
 /** TITLE STYLE */
 .Title > h3 > a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
 }
 .Title > h3 > a:hover {
 }
-
+@media only screen and (max-width: 1200px) {
+  .Nav {
+   display: none;
+  }
+}
 /** NAV STYLE */
 .Nav > ul {
   display: flex;
@@ -37,8 +47,11 @@
   margin-left: 16px;
 }
 .Nav > ul > li > a {
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
+}
+.Nav > ul > li >span {
+  color: var(--font-color);
 }
 .Nav > ul > li > a:hover {
 }

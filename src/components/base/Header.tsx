@@ -7,7 +7,6 @@ interface HeaderProps {
 }
 
 const Header = ({ toggleTheme }: HeaderProps) => {
-  
   const scrollPosition = useScrollPosition() != 0 ? "Scrolled" : "";
 
   return (
@@ -15,18 +14,20 @@ const Header = ({ toggleTheme }: HeaderProps) => {
       <div className={styles.Wrapper}>
         <div className={styles.Title}>
           <h3>
-            <Link href={""}>RESUMATE</Link>
+            <Link href={"/"}>RESUMATE</Link>
           </h3>
         </div>
         <div className={styles.Nav}>
           <ul>
             <li>
-              <Link href={""}>COMPANY</Link>
+              <Link href={"/company"}>COMPANY</Link>
             </li>
             <li>
-              <Link href={""}>CAREERS</Link>
+              <Link href={"/career"}>CAREERS</Link>
             </li>
-            <li>/</li>
+            <li>
+              <span>/</span>
+            </li>
             <li>
               <Link href={""}>LOGIN</Link>
             </li>
