@@ -1,12 +1,14 @@
 import styles from "./style/Header.module.css";
 import useScrollPosition from "@/libs/hooks/useScrollPosition";
 import Link from "next/link";
+import { useState } from "react";
 
 interface HeaderProps {
   toggleTheme: () => void;
 }
 
 const Header = ({ toggleTheme }: HeaderProps) => {
+  const [menuState, setMenuState] = useState("");
   const scrollPosition = useScrollPosition() != 0 ? "Scrolled" : "";
 
   return (
@@ -39,6 +41,40 @@ const Header = ({ toggleTheme }: HeaderProps) => {
             </li>
           </ul>
         </div>
+        <div className={`${styles.Menu}`}>
+          <div
+            className={`${styles.Hamburger} ${
+              menuState ? styles[menuState] : ""
+            }`}
+            onClick={() => {
+              menuState == "" ? setMenuState("active") : setMenuState("");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul
+          className={`${styles.DropDown} ${menuState ? styles[menuState] : ""}`}
+        >
+          <li>
+            <Link href={"/company"}>COMPANY</Link>
+          </li>
+          <li>
+            <Link href={"/career"}>CAREERS</Link>
+          </li>
+          <li>
+            <Link href={"/login"}>LOGIN</Link>
+          </li>
+          <li>
+            <label className={styles.Switch} onChange={toggleTheme}>
+              <input type="checkbox" />
+              <span className={`${styles.Slider} ${styles.Round}`}></span>
+            </label>
+          </li>
+        </ul>
       </div>
     </header>
   );
