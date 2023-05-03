@@ -6,7 +6,7 @@ import HomeTemplate from "@/components/template/HomeTemplate";
 const HomeContainer = () => {
   return (
     <HomeTemplate>
-      <Search />
+      <Search writeText="자소서 문항 작성"/>
       <List>
         <ListItem></ListItem>
         <ListItem></ListItem>

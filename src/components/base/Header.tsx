@@ -22,7 +22,10 @@ const Header = ({ toggleTheme }: HeaderProps) => {
         <div className={styles.Nav}>
           <ul>
             <li>
-              <Link href={"/company"}>COMPANY</Link>
+              <Link href={"/template"}>TEMPLATE</Link>
+            </li>
+            <li>
+              <Link href={"/module"}>MODULE</Link>
             </li>
             <li>
               <Link href={"/career"}>CAREERS</Link>
@@ -60,7 +63,10 @@ const Header = ({ toggleTheme }: HeaderProps) => {
           className={`${styles.DropDown} ${menuState ? styles[menuState] : ""}`}
         >
           <li>
-            <Link href={"/company"}>COMPANY</Link>
+            <Link href={"/template"}>TEMPLATE</Link>
+          </li>
+          <li>
+            <Link href={"/module"}>MODULE</Link>
           </li>
           <li>
             <Link href={"/career"}>CAREERS</Link>
